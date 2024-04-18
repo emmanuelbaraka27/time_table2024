@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed; /* Fix the navbar position */
+  width: 100%; /* Make navbar full-width */
+  z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make navbar full-width */
+}
+
+.navbar h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ecf0f1;
+}
+
+.sidebar {
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 40px; /* Adjust top position to start below navbar */
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 999; /* Ensure sidebar is below navbar */
+}
+
+.sidebar a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+section {
+  margin-left: 200px;
+  padding: 20px;
+  padding-top: 60px; /* Adjust top padding to avoid overlap with navbar */
+}
+
+.report form {
+  margin-bottom: 20px;
+}
+
+.report label {
+  margin-right: 10px;
+}
+
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+button {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
